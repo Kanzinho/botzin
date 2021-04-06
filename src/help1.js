@@ -28,8 +28,8 @@ const help1 = (prefix) => {
 ┣⊱❥ *firetext*
 
 ════════════════════
-*CAUSS* 🤗
-*Digite dono para mais info*
+*KAZINHO* 🤗
+*Digite ${prefix}dono para mais info*
 ════════════════════`
 }
 exports.help1 = help1
