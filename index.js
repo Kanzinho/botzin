@@ -59,7 +59,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:Causs\n' // Nama kamu
             + 'ORG:Lexa;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=554792091566:+55 47992091566\n' //Nomor whatsapp kamu
+            + 'TEL;type=CELL;type=VOICE;waid=559184138022:+55 9184138022\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 prefix = '.','!','#'
 blocked = []
@@ -304,7 +304,7 @@ async function starts() {
 			const mod = [ownerNumber,"554792091566@s.whatsapp.net","559184138022@s.whatsapp.net"]//ubah nomor lo
 			const adminbotnumber = ["554792091566@s.whatsapp.net","559184138022@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["554792091566@s.whatsapp.net","559184138022@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["559184138022@s.whatsapp.net","554792091566@s.whatsapp.net","558296156440@s.whatsapp.net"]
+			const premium = ["559184138022@s.whatsapp.net","554792091566@s.whatsapp.net","558296156440@s.whatsapp.net",]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -492,6 +492,39 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
+		if (messagesC.includes("seu preto")){
+		if (!isGroup) return
+		if (!isAntiRacismo) return
+		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		client.updatePresence(from, Presence.composing)
+		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
+		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
+		reply(`tchau racista ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		setTimeout( () => {
+			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
+		}, 5000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("1 segundo")
+		}, 4000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("2 segundos")
+		}, 3000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("3 segundos")
+		}, 2000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("4 segundos")
+		}, 1000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("5 segundo KKKKKKKK tchau otário 😔🤙")
+		}, 0)
+	}
+			
 	        if (messagesC.includes("macaco")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
