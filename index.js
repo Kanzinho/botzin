@@ -4034,6 +4034,17 @@ break
 						reply('Transmissão enviada')
 					}
 					break
+				case 'info':
+				case 'profile':
+                if (isBanned) return reply(mess.only.benned)
+                if (!isUser) return reply(mess.only.userB)
+
+                    me = client.user
+                    uptime = process.uptime()
+                    teks = *Kazinho bot* : ${me.name}\n*Dono* : *Kzinho*\n*NUMERO* : wa.me/559184138022\n*KAZINHO BOT:* @${me.jid.split('@')[0]}\n*Prefixo* : ${prefix}\n*PESSOAS BLOQUIADAS* : ${blocked.length}\n*TEMPO DE ATIVIDADE DO BOT* : ${kyun(uptime)}\n*Public:* ON\n*Total de usuarios premium*: ${premium.length}\n*Total de chats* : ${totalchat.length}\n*Instagram* : *kazinho_*\n*Github* : *github.com/Kanzinho/botzin*\n
+                    buffer = await getBuffer(me.imgUrl)
+                    client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
+                    break
 				case 'wait':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						reply(mess.wait)
