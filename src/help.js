@@ -4,8 +4,7 @@ const help = (prefix) => {
       *KAZINHO BOT*
  <══════════════════════>
 
-┌─────────❶.❷────────
-║〘 INFORMAÇÕES 〙
+╠══〘 INFORMAÇÕES 〙══
 ║
 ╠🐉 *KZINHO BOT* 
 ╠🐉 𝐃𝐎𝐍𝐎: KANZINHO (base causs)
@@ -13,196 +12,338 @@ const help = (prefix) => {
 ╠🐉 𝐒𝐓𝐀𝐓𝐔𝐒: ON
 ║
 ║
-╠══🐰〘 MENU 〙🐰══
+╠══〘 MENU 〙══
 ║
 ║ *${prefix}figu*
+║ *Nota:* Faz uma figurinha 
 ║ *${prefix}toimg*
-║ *${prefix}darkjokes (memes aleatórios)*
+║ *Nota:* Transforma de figurinha para imagem
+║ *${prefix}darkjokes*
+║ *Nota:* Memes aleatorios
 ║ *${prefix}memeindo*
+║ *Nota:* Memes aleatorios
 ║ *${prefix}tts*
+║ *Nota:* Mensagem por voz
 ║ *${prefix}lolih [on]*
+║ *Nota:* Hehe
 ║ *${prefix}nsfwloli [off]*
+║ *Nota:* Ta off
 ║ *${prefix}url2img*
+║ *Nota:* FAz um URL da imagem
 ║ *${prefix}leens [na legenda]*
+║ *Nota:* Deixa a foto em leens
 ║ *${prefix}wait [na legenda]*
+║ *Nota:* Encontra a foto ou anime que ta procurando
 ║ *${prefix}setprefix*
+║ *Nota:* Seleciona o prefixo do bot
 ║
 ╠══🐰〘 OUTROS 〙🐰══
 ║
 ║ *${prefix}linkgp*
+║ *Nota:*Envia o link do gp
 ║ *${prefix}simih [1/0]*
+║ *Nota:* Esta bugado
 ║ *${prefix}marcar*
+║ *Nota:* Marca as pessoas do gp
 ║ *${prefix}add [@]*
+║ *Nota:* Adiciona um membro
 ║ *${prefix}banir [@]*
+║ *Nota:* Bani um membro
 ║ *${prefix}promover [@]*
-║ *${prefix}rebaixar*
-║ *${prefix}admins*
+║ *Nota:* Promove um membro a ADM
+║ *${prefix}rebaixar [@]*
+║ *Nota:* Tira o ADM 
+║ *${prefix}admins* 
+║ *Nota:* Mostra os ADM's
 ║ *${prefix}marcar2*
-║ *${prefix}bc [texto]* (ele faz uma ™)
+║ *Nota:* Marca pessoa de um nivel para baixo
+║ *${prefix}bc [texto]*
+║ *Nota:* Ela faz uma TM
 ║ *${prefix}marcar3*
+║ *Nota:* Marca pessoas de outro nivel para baixo
 ║ *${prefix}bloqueados*
+║ *Nota:* Lista de bloqueados do bot
 ║ *${prefix}bloquear [@]*
+║ *Nota:* Bloqueia um pessoa
 ║ *${prefix}desbloquear [@]*
+║ *Nota:* Desbloqueia uma pessoa
 ║ *${prefix}limpar*
+║ *Nota:* Limpa um chat
 ║ *${prefix}bc [ *texto* ]*
+║ *Nota:* Cria uma TM
 ║ *${prefix}bemvindo [1/0]*
+║ *Nota:* Qm entrar no gp recebera boas vindas
 ║ *${prefix}clonar [@]*
-║ *${prefix}info*
+║ *Nota:* Clona a foto de perfil
+║ *${prefix}info* [OFF]
+║ *Nota:* Mostra as informações do bot
 ║ *${prefix}help1*
+║ *Nota:* Lista de comendos
 ║ *${prefix}dono*
+║ *Nota:* Mostra o dono do bot
 ║ *${prefix}owner*
+║ *Nota:* Mnd o numero do Dono
 ║ *${prefix}tts [texto]*
+║ *Nota:* Mnd mensagem em voz
 ║ *${prefix}setnome*
+║ *Nota:* Coloca a nome do gp
 ║ *${prefix}termux*
+║ *Nota:* Como usar o Termux
 ║ *${prefix}setfoto*
+║ *Nota:* Coloca a foto do gp
 ║ *${prefix}grupoinfo*
+║ *Nota:* Mostra as informações do gp
 ║ *${prefix}ytmp4*
+║ *Nota:* Baixa um video do YT
 ║ *${prefix}bomdia*
+║ *Nota:* Bot da bom dia
 ║ *${prefix}boanoite*
-║ *${prefix}marcar*
-║ *${prefix}marcar2*
-║ *${prefix}marcar3*
+║ *Nota:* Bot da boa noite
 ║
-╠══🐰〘 IMAGENS 〙🐰══
+╠══〘 IMAGENS 〙══
 ║
 ║ *${prefix}loli* [off]
+║ *Nota:* N esta funcionando
 ║ *${prefix}loli1*
+║ *Nota:* Fotinha do Loli
 ║ *${prefix}hentai*
+║ *Nota:* Mostra um hentaizinho 
 ║ *${prefix}dono*
+║ *Nota:* Mostra o Dono do bot
 ║ *${prefix}porno*
-║ *${prefix}boanoite*
-║ *${prefix}bomdia*
-║ *${prefix}boatarde*
-║ *${prefix}mia [aleatórias]*
-║ *${prefix}rize [aleatórias]*
-║ *${prefix}minato [aleatórias]*
-║ *${prefix}boruto [aleatórias]*
-║ *${prefix}hinata [aleatórias]*
-║ *${prefix}sasuke [aleatórias]*
-║ *${prefix}sakura [aleatórias]*
-║ *${prefix}naruto [aleatórias]*
-║ *${prefix}meme*   
+║ *Nota:* Mnd um porno 
+║ *${prefix}mia*
+║ *Nota:* Foto aleatoria da Mia 
+║ *${prefix}rize*
+║ *Nota:* Foto aleatoria da Rize
+║ *${prefix}minato*
+║ *Nota:* Foto aleatoria do Minato
+║ *${prefix}boruto*
+║ *Nota:* Foto aleatoria do Boruto
+║ *${prefix}hinata*
+║ *Nota:* Foto aleatoria da Hinata 
+║ *${prefix}sasuke*
+║ *Nota:* Foto aleatoria do Sasuke
+║ *${prefix}sakura*
+║ *Nota:* Foto aleatoria da Sakura
+║ *${prefix}naruto*
+║ *Nota:* Foto aleatoria do Naruto
+║ *${prefix}meme*
+║ *Nota:* Mostra um meme 
 ║ *${prefix}lofi*
+║ *Nota:* Mnd um Lofi
 ║ *${prefix}malkova*
+║ *Nota:* Foto da Malkova
 ║ *${prefix}canal*
+║ *Nota:* Canal do Causs
 ║ *${prefix}nsfwloli1*
+║ *Nota:* Hehe
 ║ *${prefix}reislin*
+║ *Nota:* Foto da Reislin
 ║
-╠══🐰〘 INTELIGÊNCIA 〙🐰══
-║
+╠══〘 INTELIGÊNCIA IA 〙══
+║ *Nota:* N ta funcionando
+║ 
 ║ *${prefix}simih 1 (para ativar)*
 ║ *${prefix}simih 0 (para desativar)*
 ║ *${prefix}simi (sua mensagem)*
 ║
-╠══🐰〘 EM PRODUÇÃO 〙🐰══
+╠══〘 EM PRODUÇÃO 〙══
 ║
 ║ *${prefix}gado*
+║ *Nota:* Sem expecificações
 ║ *${prefix}dbz*
+║ *Nota:* Sem expecificações
 ║ *${prefix}gtts loli*
+║ *Nota:* Sem expecificações
 ║ *${prefix}hidegp*
+║ *Nota:* Sem expecificações
 ║ *${prefix}grupos*
+║ *Nota:* Sem expecificações
 ║ *${prefix}antinazismo*
+║ *Nota:* Sem expecificações
 ║ *${prefix}it 1/0*
+║ *Nota:* Sem expecificações
 ║
 ╠══🐰〘 SÓ PREMIUM 〙🐰══
 ║
 ║ *${prefix}dado*
+║ *Nota:* Numero aleatorio de 1 a 6
 ║ *${prefix}cekvip*
+║ *Nota:* Verifica seu vip
 ║ *${prefix}premiumlist*
+║ *Nota:* Lista de premim
 ║ *${prefix}delete*
+║ *Nota:* Deleta as mensagem do gp
 ║ *${prefix}modapk*
+║ *Nota:* Mod do app
 ║ *${prefix}indo10*
+║ *Nota:* Sem expecificações
 ║ *${prefix}daftarvip [para virar Premium]*
+║ *Nota:* Para virar Premium
 ║ *${prefix}qrcode*
+║ *Nota:* Gera um QRCODE
 ║ *${prefix}chentai*
+║ *Nota:* Mostra uma lista de hentais 
 ║ *${prefix}gcpf*
+║ *Nota:* Gera cpf
 ║ *${prefix}gbin*
+║ *Nota:* Gera bin
 ║ *${prefix}pack*
+║ *Nota:* Aquele packzinho
 ║ *${prefix}destrava*
+║ *Nota:* Mnd um destrava
 ║ *${prefix}gpessoa*
+║ *Nota:* Gera pessoas
 ║
-╠══🐰〘 GRUPO 〙🐰══
+╠══〘 GRUPO 〙══
 ║
 ║ *${prefix}banir*
+║ *Nota:* Ban em um mebro
 ║ *${prefix}leveling [on/off]*
+║ *Nota:* Sistema de niveis
 ║ *${prefix}level*
+║ *Nota:* Mostra seu nivel
 ║ *${prefix}add*
+║ *Nota:* Adiciona um membro
 ║ *${prefix}promover*
+║ *Nota:* Promove um membro a ADM
 ║ *${prefix}setfoto [na legenda]*
+║ *Nota:* Coloca a foto do gp
 ║ *${prefix}setname [texto]*
+║ *Nota:* Coloca o nome do gp
 ║ *${prefix}rebaixar*
+║ *Nota:* Rebaixa o ADM
 ║ *${prefix}admins*
+║ *Nota:* Lista de ADM's
 ║ *${prefix}marcar*
+║ *Nota:* Marca os membros
 ║ *${prefix}marcar2*
+║ *Nota:* Marca membros de um nivel para baixo
 ║ *${prefix}marcar3*
+║ *Nota:* Marca membros de outro nivel para baixo
 ║ *${prefix}bemvindo [1/0]*
+║ *Nota:* Bot dara boas vindas a novos membros
 ║ *${prefix}grupoinfo*
+║ *Nota:* Mostra as informações do gp
 ║ *${prefix}bomdia*
+║ *Nota:* Bot da Bom dia
 ║ *${prefix}boatarde*
+║ *Nota:* Bot da Boa tarde
 ║ *${prefix}boanoite*
+║ *Nota:* Bot da Boa noite
 ║ *${prefix}setdesc*
-║ *${prefix}bug [sua mensagem]*
+║ *Nota:* Coloca a descrição do gp
+║ *${prefix}bug [sua mensagem]* 
+║ *Nota:* Buga sua mensagem
 ║
 ╠══🐰〘 ESPECIFICO DO BOT 〙🐰══
 ║
 ║ *${prefix}bug [sua mensagem]*
+║ *Nota:* Buga sua mensagem
 ║ *${prefix}clonar [@]*
+║ *Nota:* Clona a foto de perfil
 ║ *${prefix}dono*
-║ *${prefix}ping [ver velocidade do bot]*
+║ *Nota:* Mostra o Dono do bot
+║ *${prefix}ping*
+║ *Nota:* Velocidade do bot
 ║ *${prefix}termux*
+║ *Nota:* Mostra como usar o Termux
 ║ *${prefix}gay [@]*
+║ *Nota:* Taxa de gay
 ║ *${prefix}wame*
+║ *Nota:* Seu link do zap
 ║ *${prefix}map (nome)*
+║ *Nota:* Busca coisa no mapa
 ║ *${prefix}setppbot (marque uma img)*
+║ *Nota:* Seleciona a foto do bot
 ║ *${prefix}pinterest (nome)*
-║ *${prefix}desligar (so para o dono)*
+║ *Nota:* Pesquisa algo no pinterest
+║ *${prefix}desligar*
+║ *Nota:* So para o dono
 ║* ${prefix}timer*
+║ *Nota:* O tituo ja diz
 ║
-╠══🐰〘 MAIS ALGUNS 〙🐰══
+╠══〘 MAIS ALGUNS 〙══
 ║
-║ *${prefix}neko*
+║ *${prefix}neko [OFF]*
+║ *Nota:* N funciona
 ║ *${prefix}ttp [texto]*
+║ *Nota:* Sem explicações
 ║ *${prefix}testime*
+║ *Nota:* So para o dono
 ║ *${prefix}tomp3*
+║ *Nota:* Transforma de video para audio
 ║ *${prefix}modoanime [on/off]*
+║ *Nota:* Titulo ja diz
 ║ *${prefix}modonsfw [on/off]*
+║ *Nota:* Hehe
 ║ *${prefix}happymod [jogo/app]*
+║ *Nota:* Mod de app
 ║ *${prefix}rize*
+║ *Nota:* Mostra uma foto da rize
 ║ *${prefix}ytsearch*
+║ *Nota:* Busca algo no YT
 ║ *${prefix}moddroid [jogo/app]*
+║ *Nota:* Mod de app
 ║ *${prefix}xvideos [titulo]**
+║ *Nota:* Hehe
 ║ *${prefix}nomegp*
-║ *${prefix}darkjokes (memes aleatórios)*
-║ *${prefix}animecry*
+║ *Nota:* seleciona o nome do gp
+║ *${prefix}darkjokes*
+║ *Nota:* Memes aleatorios
+║ *${prefix}animecry [OFF]*
+║ *Nota:* Ta off
 ║ *${prefix}gay1*
+║ *Nota:* Mostra a porcentagem de gay 
 ║ *${prefix}next*
+║ *Nota:* Ache um companheiro
 ║ *${prefix}alerta*
-║ *${prefix}belle [img aleatórias]*
+║ *Nota:* Alerta 
+║ *${prefix}belle*
+║ *Nota:* Imagens aleatorias da Belle
 ║ *${prefix}pronomeneu [texto]*
+║ *Nota:* Cringe
 ║ *${prefix}hobby*
-║ *${prefix}kiss
+║ *Nota:* Perguntas 
+║ *${prefix}kiss*
+║ *Nota:* Beijo 
 ║ *${prefix}analise
+║ *Nota:* Analise
 ║
-╠══🐰〘 COMANDOS DE VOZ 〙🐰══
+╠══〘 COMANDOS DE VOZ 〙══
 ║
 ║ *${prefix}ola*
+║ *Nota:* Bot diz oi
 ║ *${prefix}bv*
+║ *Nota:* Bot da boas vindas
 ║ *${prefix}tchau*
-║ *${prefix}bem*
+║ *Nota:* Bot diz adeus
+║ *${prefix}bem[OFF]*
+║ *Nota:* Ta off
 ║ *${prefix}a*
+║ *Nota:* Bot grita
 ║ *${prefix}fdp*
+║ *Nota:* ....
 ║ *${prefix}onich*
+║ *Nota:* Olha esse bixo
 ║ *${prefix}beat1*
+║ *Nota:* Bot faz um beat
 ║ *${prefix}glub*
-║ *${prefix}causs*
+║ *Nota:*.....
 ║
 ╠══🐰〘 OUTROS /2 〙🐰══
 ║
 ║ *${prefix}antilink [1/0]*
+║ *Nota:* Qnd ativo n pode mais mandar link no gp
 ║ *${prefix}brainly [pergunta]*
+║ *Nota:* Pergunta do brainly
 ║ *${prefix}antiracismo [on/off]*
+║ *Nota:* Palavras como preto e macaco n poderão ser mandadas 
 ║ *${prefix}setnomebot*
+║ *Nota:* Coloca o nome do bot
 ║ *${prefix}meme*
+║ *Nota:* Memes aleatorios
 ║
 ╠══🐰〘 INTERATIVOS 〙🐰══
 ║
@@ -223,138 +364,3 @@ const help = (prefix) => {
 }
 
 exports.help = help
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
