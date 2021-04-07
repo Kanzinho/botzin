@@ -3559,7 +3559,7 @@ break
 				case 'termux':
 					meme = await kagApi.memes()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgADDq_64EbTI0NroP7CUoVeWmu1J06NnGHw&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Terminal é um programa muito conhecido no mundo das distribuições Linux. Ele é uma ferramenta que facilita muito nas tarefas relacionadas ao sistema. Agora, já pensou em utilizar o Terminal Linux no seu Android? Esta é a proposta do Termux.\n\n*TERMUX: UTILIZE O TERMINAL NO SEU ANDROID*\n\nA utilização do Terminal aumenta muito a produtividade do usuário que já possui um determinado nível de conhecimento técnico.\nCom o terminal, é possível fazer diversas e diferentes coisas, desde navegar entre os diretórios e instalar programas, até descompactar arquivos e monitorar os processos.'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Terminal é um programa muito conhecido no mundo das distribuições Linux. Ele é uma ferramenta que facilita muito nas tarefas relacionadas ao sistema. Agora, já pensou em utilizar o Terminal Linux no seu Android? Esta é a proposta do Termux.\n\n*TERMUX: UTILIZE O TERMINAL NO SEU ANDROID*\n\nA utilização do Terminal aumenta muito a produtividade do usuário que já possui um determinado nível de conhecimento técnico.\nCom o terminal, é possível fazer diversas e diferentes coisas, desde navegar entre os diretórios e instalar programas, até descompactar arquivos e monitorar os processos.'})
 					break
 		    	case 'grupoinfo':
                     client.updatePresence(from, Presence.composing)
@@ -4034,17 +4034,6 @@ break
 						reply('Transmissão enviada')
 					}
 					break
-				case 'info':
-				case 'profile':
-                if (isBanned) return reply(mess.only.benned)
-                if (!isUser) return reply(mess.only.userB)
-
-                    me = client.user
-                    uptime = process.uptime()
-                    teks = *Kazinho bot* : ${me.name}\n*Dono* : *Kzinho*\n*NUMERO* : wa.me/559184138022\n*KAZINHO BOT:* @${me.jid.split('@')[0]}\n*Prefixo* : ${prefix}\n*PESSOAS BLOQUIADAS* : ${blocked.length}\n*TEMPO DE ATIVIDADE DO BOT* : ${kyun(uptime)}\n*Public:* ON\n*Total de usuarios premium*: ${premium.length}\n*Total de chats* : ${totalchat.length}\n*Instagram* : *kazinho_*\n*Github* : *github.com/Kanzinho/botzin*\n
-                    buffer = await getBuffer(me.imgUrl)
-                    client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
-                    break
 				case 'wait':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						reply(mess.wait)
