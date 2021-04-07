@@ -47,6 +47,7 @@ const help = (prefix) => {
 ║ *${prefix}bc [ *texto* ]*
 ║ *${prefix}bemvindo [1/0]*
 ║ *${prefix}clonar [@]*
+║ *${prefix}info*
 ║ *${prefix}help1*
 ║ *${prefix}dono*
 ║ *${prefix}owner*
@@ -99,9 +100,9 @@ const help = (prefix) => {
 ║ *${prefix}dbz*
 ║ *${prefix}gtts loli*
 ║ *${prefix}hidegp*
-║ *${prefix}grupos
-║ *${prefix}antinazismo
-║ *${prefix}it 1/0
+║ *${prefix}grupos*
+║ *${prefix}antinazismo*
+║ *${prefix}it 1/0*
 ║
 ╠══🐰〘 SÓ PREMIUM 〙🐰══
 ║
