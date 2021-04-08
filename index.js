@@ -291,9 +291,9 @@ async function starts() {
 					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
 					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD CAUSS BOT*',
 					benned: 'Você para a banda, por favor, contate o proprietário para abrir sua banda',
-					ownerG: '[❗] Causs? Este é um recurso especial para o Causs ❌',
-					ownerB: '[❗] Causs? Este é um recurso especial para o Causs ❌',
-					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de CAUSS. Registre-se para fazer amizade com o bot Causs por meio, \n\nCommand : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar Causs|17\n\n──「 CAUSS BOT 」──`,
+					ownerG: '[❗] Kzinho? Este é um recurso especial para o Kzinho ❌',
+					ownerB: '[❗] Kzinho? Este é um recurso especial para o Kzinho ❌',
+					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de Kzinho. Registre-se para fazer amizade com o bot Kazinho por meio, \n\nCommand : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar Kzinho|17\n\n──「 KAZINHO BOT 」──`,
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
 				}
@@ -657,7 +657,7 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-		        if (messagesC.includes("https://")){
+		        if (messagesC.includes("wa.me/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
 		if (isGroupAdmins) return reply('vc é admin, então n irei te dar ban por usar links, rlx 🙂')
@@ -692,12 +692,12 @@ if (text.includes("placa"))
 	
 	if (messagesC.includes("fdp")){
 			client.updatePresence(from, Presence.composing)
-			reply("teu pai")
+			reply("ksksksk Teu pai ksksksk")
 	}
 	
 		if (messagesC.includes("corno")){
 			client.updatePresence(from, Presence.composing)
-			reply("vsfd seu merda")
+			reply("Um corno reconhece o outro")
 	}
 	
 		if (messagesC.includes("tmnc")){
@@ -707,17 +707,17 @@ if (text.includes("placa"))
 	
 		if (messagesC.includes("vsfd")){
 			client.updatePresence(from, Presence.composing)
-			reply("bora juntos?")
+			reply("Top, Bora junto?")
 	}
 	
-		if (messagesC.includes("cadebot")){
+		if (messagesC.includes("cadeobot")){
 			client.updatePresence(from, Presence.composing)
 			reply("olha eu aqui carai")
 	}
 	
 		if (messagesC.includes("bot")){
 			client.updatePresence(from, Presence.composing)
-			reply("oi")
+			reply("Diga meu chapa")
 	}
 	
 			if (messagesC.includes("bah")){
@@ -863,7 +863,7 @@ if (text.includes("placa"))
 					break
 					case 'jadian':
 
-                    if (!isGroup) return reply(from, 'este comando só pode ser usado dentro do grupo', id)
+                    if (!isGroup) return reply(from, 'Este comando só pode ser usado dentro do grupo', id)
 
                     const up = groupMembers
 
@@ -1407,7 +1407,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
 				case 'ytsearch':
-					if (args.length < 1) return reply('Yang mau di cari apa?')
+					if (args.length < 1) return reply('Qual o texto para pesquisar?')
 					reply(mess.wait)
 					anu = await fetchJson(`https://api.arugaz.my.id/api/media/ytsearch?query=${body.slice(10)}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
@@ -1572,7 +1572,7 @@ if (text.includes("placa"))
 		        case 'wame':
                   client.updatePresence(from, Presence.composing) 
                   options = {
-                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*CAUSS NO CONTROLE🐊🚩*`,
+                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*`,
                   contextInfo: { mentionedJid: [sender] }
                   }
                   client.sendMessage(from, options, text, { quoted: mek } )
@@ -1750,7 +1750,7 @@ if (text.includes("placa"))
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
 				    client.blockUser (`${body.slice(9)}@c.us`, "remove")
-					client.sendMessage(from, `perintah Diterima, membuka blokir ${body.slice(9)}@c.us`, text)
+					client.sendMessage(from, `${body.slice(9)}@c.us Foi desbloquiado`, text)
 				    break
                 case 'image':
 					if (args.length < 1) return reply('O que você quer procurar, mana?')
@@ -2477,13 +2477,13 @@ break
                    break
 					case 'totaluser':
 					if (!isOwner) return reply(mess.only.ownerB)    
-					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOS CAUSS BOT 👑* 」\n\`\`\``
+					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOS KAZINHO BOT 👑* 」\n\`\`\``
 					no = 0
 					for (let hehehe of user) {
 						no += 1
 						teks += `\`\`\`[${no.toString()}]\`\`\` @${hehehe.split('@')[0]}\n`
 					}
-					teks += `│+ Total de usuários : ${user.length}\n╰──────*「 *CAUSS* 」*────`
+					teks += `│+ Total de usuários : ${user.length}\n╰──────*「 *KAZINHO* 」*────`
 					 client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": user}})
 					break
 				case 'desligar':
@@ -3156,6 +3156,9 @@ break
 				case 'figu':
 				case 'fig':
 				case 'f':
+				case 'sticker':
+				case 'figurinha':
+				case 'stiker':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
@@ -3602,19 +3605,19 @@ break
                break
            case 'addshit':
                if (!isOwner) return reply(mess.only.ownerB);
-               if (args.length < 1) return reply(`Kirim perintah ${prefix}addbadword [kata kasar]. contoh ${prefix}addbadword bego`);
+               if (args.length < 1) return reply(`Precisa selecionar o shit`);
                const bw = body.slice(9);
                bad.push(bw);
                fs.writeFileSync('./database/json/bad.json', JSON.stringify(bad));
-               reply('Success Menambahkan Bad Word!');
+               reply('Successo shit adicionado!');
                break;
            case 'delshit':
                if (!isOwner) return reply(mess.only.ownerB);
-               if (args.length < 1) return reply(`Kirim perintah ${prefix}delbadword [kata kasar]. contoh ${prefix}delbadword bego`);
+               if (args.length < 1) return reply(`Precisa selecionar o shit`);
                let dbw = body.slice(9);
                bad.splice(dbw);
                fs.writeFileSync('./database/json/bad.json', JSON.stringify(bad));
-               reply('Success Menghapus BAD WORD!');
+               reply('Pronto shit excluido');
                break
            case 'shitlist':
                let lbw = `Lista de palavras proibidas\nTotal : ${bad.length}\n`;
@@ -3633,6 +3636,11 @@ break
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4V_4fdvF8rluX0T3KKGOvY0TusMwx7nVWtw&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* CAUSS\n*YOUTUBE:* https://youtube.com/channel/UCpB3qh2Sp3K23s9a2Q-Gf-g\n*WPP:* wa.me/+5547992091566\n*INSTA:* @animexx_png\n\n\nEspero que tenham gostado do bot 🐊🚩️'})
+					break
+				case 'dono2':
+					memein = await kagApi.memeindo()
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4V_4fdvF8rluX0T3KKGOvY0TusMwx7nVWtw&usqp=CAU`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*DONO:* KANZINHO\n*CRIADOR:*\n*WPP:* wa.me/559184138022\n*INSTA:* @kanzinho_'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return
