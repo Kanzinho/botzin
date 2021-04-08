@@ -705,14 +705,54 @@ if (text.includes("placa"))
 			reply("vai vc, tu ja me disse q é mo bom")
 	}
 	
-		if (messagesC.includes("vsfd")){
+		if (messagesC.includes("bot")){
 			client.updatePresence(from, Presence.composing)
-			reply("Top, Bora junto?")
+			reply("Diga meu chapa")
+	}
+	
+		if (messagesC.includes("figu")){
+			client.updatePresence(from, Presence.composing)
+			reply("Coloque o perfixo do bot na frente da mensagem")
+	}
+	
+		if (messagesC.includes("fig")){
+			client.updatePresence(from, Presence.composing)
+			reply("Coloque o perfixo do bot na frente da mensagem")
+	}
+	
+		if (messagesC.includes("toimg")){
+			client.updatePresence(from, Presence.composing)
+			reply("Coloque o perfixo do bot na frente da mensagem")
+	}
+	
+		if (messagesC.includes("level")){
+			client.updatePresence(from, Presence.composing)
+			reply("Coloque o perfixo do bot na frente da mensagem")
+	}
+	
+		if (messagesC.includes("ping")){
+			client.updatePresence(from, Presence.composing)
+			reply("Coloque o perfixo do bot na frente da mensagem")
 	}
 	
 		if (messagesC.includes("cadeobot")){
 			client.updatePresence(from, Presence.composing)
 			reply("olha eu aqui carai")
+	}
+	
+		if (messagesC.includes("wame")){
+			client.updatePresence(from, Presence.composing)
+			reply("Coloque o perfixo do bot na frente da mensagem")
+	}
+	
+		if (messagesC.includes("Analise")){
+			client.updatePresence(from, Presence.composing)
+			reply("Analise")
+	}
+	
+		if (messagesC.includes("cringe")){
+			client.updatePresence(from, Presence.composing)
+			reply("N mano, vc q fica vendo tiktok da saycat")
 	}
 	
 		if (messagesC.includes("bot")){
