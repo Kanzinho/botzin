@@ -3655,7 +3655,7 @@ break
 					break
 				case 'dono2':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://cdn.discordapp.com/attachments/717811477041643610/830028763978530848/IMG-20210408-WA0170.jpg`)
+					buffer = await getBuffer(`https://photos.google.com/photo/AF1QipNeveThT4R-yGWZJxbg47dgNa7QhRcpjG7fMlmT`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*DONO:* KANZINHO\n*CRIADOR:*CAUSS\n*WPP:* wa.me/559184138022\n*INSTA:* @kanzinho_'})
 					break
 				case 'setprefix':
