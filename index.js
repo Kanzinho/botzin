@@ -304,7 +304,7 @@ async function starts() {
 			const mod = [ownerNumber,"554792091566@s.whatsapp.net","559184138022@s.whatsapp.net"]//ubah nomor lo
 			const adminbotnumber = ["554792091566@s.whatsapp.net","559184138022@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["554792091566@s.whatsapp.net","559184138022@s.whatsapp.net","559184227885@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["559184138022@s.whatsapp.net","554792091566@s.whatsapp.net","558296156440@s.whatsapp.net",]
+			const premium = ["559184138022@s.whatsapp.net","554792091566@s.whatsapp.net","558296156440@s.whatsapp.net","559184227885@s.whatsapp.net","551176092098@s.whatsapp.net",]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -657,7 +657,7 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-		        if (messagesC.includes("wa.me/")){
+		        if (messagesC.includes("wa.me/55")){
 		if (!isGroup) return
 		if (!isAntiLink) return
 		if (isGroupAdmins) return reply('vc é admin, então n irei te dar ban por usar links, rlx 🙂')
@@ -710,44 +710,20 @@ if (text.includes("placa"))
 			reply("Diga meu chapa")
 	}
 	
-		if (messagesC.includes("figu")){
-			client.updatePresence(from, Presence.composing)
-			reply("Coloque o perfixo do bot na frente da mensagem")
-	}
-	
-		if (messagesC.includes("fig")){
-			client.updatePresence(from, Presence.composing)
-			reply("Coloque o perfixo do bot na frente da mensagem")
-	}
-	
-		if (messagesC.includes("toimg")){
-			client.updatePresence(from, Presence.composing)
-			reply("Coloque o perfixo do bot na frente da mensagem")
-	}
-	
-		if (messagesC.includes("level")){
-			client.updatePresence(from, Presence.composing)
-			reply("Coloque o perfixo do bot na frente da mensagem")
-	}
-	
-		if (messagesC.includes("ping")){
-			client.updatePresence(from, Presence.composing)
-			reply("Coloque o perfixo do bot na frente da mensagem")
-	}
-	
+
 		if (messagesC.includes("cadeobot")){
 			client.updatePresence(from, Presence.composing)
 			reply("olha eu aqui carai")
 	}
 	
-		if (messagesC.includes("wame")){
-			client.updatePresence(from, Presence.composing)
-			reply("Coloque o perfixo do bot na frente da mensagem")
-	}
-	
-		if (messagesC.includes("Analise")){
+		if (messagesC.includes("analise")){
 			client.updatePresence(from, Presence.composing)
 			reply("Analise")
+	}
+	
+		if (messagesC.includes("pnc")){
+			client.updatePresence(from, Presence.composing)
+			reply("O q mn vc gosta de um pau no seu cu? gay demais kskssk")
 	}
 	
 		if (messagesC.includes("cringe")){
@@ -3679,8 +3655,8 @@ break
 					break
 				case 'dono2':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4V_4fdvF8rluX0T3KKGOvY0TusMwx7nVWtw&usqp=CAU`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*DONO:* KANZINHO\n*CRIADOR:*\n*WPP:* wa.me/559184138022\n*INSTA:* @kanzinho_'})
+					buffer = await getBuffer(`https://cdn.discordapp.com/attachments/717811477041643610/830028763978530848/IMG-20210408-WA0170.jpg`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*DONO:* KANZINHO\n*CRIADOR:*CAUSS\n*WPP:* wa.me/559184138022\n*INSTA:* @kanzinho_'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return
@@ -3918,6 +3894,7 @@ break
 					break
 				case 'admins':
 					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
 					teks = `Lista de admins do grupo *${groupMetadata.subject}*\nTotal : ${groupAdmins.length}\n\n`
 					no = 0
 					for (let admon of groupAdmins) {
