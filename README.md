@@ -1,5 +1,5 @@
 # Botzin
-Dono: Kanzinho (Base dark & Causs)
+Dono: Kanzinho (Base dark & Causs)/n
 Comandos do Termux
 1- pkg install git && pkg install wegt && pkg install ffmpeg && pkg install nodejs-lts
 2- git clone https://github.com/Kanzinho/botzin
