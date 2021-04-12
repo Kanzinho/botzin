@@ -819,6 +819,7 @@ if (text.includes("placa"))
 					}
 					break
 					case 'lista':
+				case 'list':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply('Você quem é o proprietário?')
 					if (args.length < 1) return reply('Onde está o texto, irmão?')
@@ -833,6 +834,7 @@ if (text.includes("placa"))
 						reply(`Sucesso, Disse ${hai} Adicionado ao banco de dados`)
 						break
                    case 'saylist':
+				case "dizelista':
 					teks = 'Esta é a lista de dizeres :\n'
 					for (let awokwkwk of sayrandom) {
 						teks += `╠➥ ${awokwkwk}\n`
@@ -967,7 +969,6 @@ if (text.includes("placa"))
 					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp3', filename: `${anu.title}.mp3`, quoted: mek})
 					break
 				case 'game':
-				
 					anu = await fetchJson(`http://rt-files.000webhostapp.com/tts.php?apikey=rasitech`, {method: 'get'})
 					setTimeout( () => {
 					client.sendMessage(from, '*➸ Responda :* '+anu.result.jawaban+'\n'+anu.result.desk, text, {quoted: mek}) // ur cods
@@ -1299,6 +1300,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
                  case 'nomegp':
+				case 'gpname':
 		             if (args.length < 1) return reply ('o nome do grupo é: *${groupMetadata.subject}*')
 		             break
 				case 'loli2':
@@ -3175,6 +3177,7 @@ break
 				case 'sticker':
 				case 'figurinha':
 				case 'stiker':
+				case 's':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
@@ -3391,7 +3394,7 @@ break
 					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
 					me = client.user
 					uptime = process.uptime()
-					client.sendMessage(from,  `*──────────────────*\n*Nome do bot:* CAUSS BOT\n*─────────────────*\n『 *𝐕𝐈𝐏 𝐔𝐒𝐄𝐑*』\n*──────────────────*\n*•Número:* *${sender.split("@s.whatsapp.net")[0]}*\n*•Status:* *ATIVO*\n*──────────────────*\n*Status Bot:* *${kyun(uptime)}*\n\n*VOCE É UM MEMBRO PREMIUM* 🐊🚩\n*──────────────────*` , text, { quoted: mek, })
+					client.sendMessage(from,  `*──────────────────*\n*Nome do bot:* KAZINHO BOT\n*─────────────────*\n『 *𝐕𝐈𝐏 𝐔𝐒𝐄𝐑*』\n*──────────────────*\n*•Número:* *${sender.split("@s.whatsapp.net")[0]}*\n*•Status:* *ATIVO*\n*──────────────────*\n*Status Bot:* *${kyun(uptime)}*\n\n*VOCE É UM MEMBRO PREMIUM* 🐊🚩\n*──────────────────*` , text, { quoted: mek, })
 					break
 					case 'dellvip':
 					if (!isOwner) return reply(mess.only.ownerB)
@@ -3487,7 +3490,7 @@ break
 					buffer = await getBuffer(`https://i.pinimg.com/originals/24/5f/91/245f91208f9030724dbc8d1bede2e9ff.gif`)
 					client.sendMessage(from, buffer, sticker, {quoted: mek, caption: 'slc'})
 					break
-				case 'bot':
+				case 'cmdtermux':
 			     	memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/dPUVFF6.png`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos basicos para bot:_*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*CAUSS NO CONTROLE*'})
