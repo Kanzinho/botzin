@@ -624,7 +624,7 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-	        if (messagesC.includes("://chat.whatsapp.com/")){
+	        if (messagesC.includes("//chat.whatsapp.com/")){
 		if (!isGroup) return
 		if (!isAntiLink) return
 		if (isGroupAdmins) return reply('vc é admin, então n irei te dar ban por usar links, rlx 🙂')
@@ -657,7 +657,7 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-		        if (messagesC.includes("wa.me/55")){
+		        if (messagesC.includes("//wa.me")){
 		if (!isGroup) return
 		if (!isAntiLink) return
 		if (isGroupAdmins) return reply('vc é admin, então n irei te dar ban por usar links, rlx 🙂')
@@ -730,12 +730,7 @@ if (text.includes("placa"))
 			client.updatePresence(from, Presence.composing)
 			reply("N mano, vc q fica vendo tiktok da saycat")
 	}
-	
-		if (messagesC.includes("bot")){
-			client.updatePresence(from, Presence.composing)
-			reply("Diga meu chapa")
-	}
-	
+
 			if (messagesC.includes("bah")){
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/bahc.mp3');
@@ -3976,6 +3971,11 @@ break
 						reply('1 para ativar, 0 para desativar, lerdão vc em KAKKKK')
 					}
                                       break
+                               case 'perfil':
+                                       if (Number(args[0]) === 1) {
+						welkom.push(from)
+						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
+						reply('Testezinho rsrsrs')
 				case 'clonar':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
