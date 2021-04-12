@@ -829,7 +829,6 @@ if (text.includes("placa"))
 						reply(`Sucesso, Disse ${hai} Adicionado ao banco de dados`)
 						break
                    case 'saylist':
-				case "dizelista':
 					teks = 'Esta é a lista de dizeres :\n'
 					for (let awokwkwk of sayrandom) {
 						teks += `╠➥ ${awokwkwk}\n`
