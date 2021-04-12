@@ -3970,14 +3970,6 @@ break
 						reply('1 para ativar, 0 para desativar, lerdão vc em KAKKKK')
 					}
                                       break
-                               case 'perfil':
-                                      if (!isfrendsowner)
-                                       if (!isOwner)
-                                       if (Number(args[0]) === 1) {
-						welkom.push(from)
-						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
-						reply('Testezinho rsrsrs')
-		                            break
 				case 'clonar':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
