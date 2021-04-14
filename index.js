@@ -13,6 +13,7 @@ const { pack } = require('./src/pack')
 const { outros } = require('./src/outros')
 const { vipmenu } = require('./src/vipmenu')
 const { destrava } = require('./src/destrava')
+const { grupo } = require('./src/grupo')
 const { menu2 } = require('./src/menu2')
 const { destrava2 } = require('./src/destrava')
 const { gbin } = require('./src/gbin')
@@ -812,6 +813,9 @@ if (text.includes("placa"))
 						client.sendMessage(from, sa, image, {quoted: mek, caption: 'Erro como!!'})
 						reply('❌ *ERRO* ❌')
 					}
+					break
+				case 'cmdsgrupo':
+					client.sendMessage(from, grupo(prefix), text)
 					break
 					case 'lista':
 				case 'list':
