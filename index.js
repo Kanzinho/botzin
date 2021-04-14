@@ -3652,7 +3652,7 @@ break
 					break
 				case 'dono2':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://photos.google.com/photo/AF1QipNeveThT4R-yGWZJxbg47dgNa7QhRcpjG7fMlmT`)
+					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4V_4fdvF8rluX0T3KKGOvY0TusMwx7nVWtw&usqp=CAU`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*DONO:* KANZINHO\n*CRIADOR:*CAUSS\n*WPP:* wa.me/559184138022\n*INSTA:* @kanzinho_'})
 					break
 				case 'setprefix':
@@ -3971,8 +3971,7 @@ break
 					}
                                       break
 				case 'clonar':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
+                                        if (!isOwner) return reply(mess.only.ownerB)
 					if (args.length < 1) return reply('Marque a pessoa que você quer clonar\n\n*EXEMPLO:* clone @')
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag cvk')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
