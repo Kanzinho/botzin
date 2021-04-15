@@ -9,6 +9,7 @@ const { color, bgcolor } = require('./lib/color')
 const { comandos } = require('./src/cmds')
 const { geral } = require('./src/geral')
 const { interação } = require('./src/interação')
+const { imagens } = require('./src/kimagens')
 const { modapk } = require('./src/modapk')
 const { pack } = require('./src/pack')
 const { outros } = require('./src/outros')
@@ -815,6 +816,9 @@ if (text.includes("placa"))
 					break
 					case 'interação':
 					client.sendMessage(from, interação(prefix), text)
+					break
+					case 'imagens':
+					client.sendMessage(from, imagens(prefix), text)
 					break
 					case 'lista':
 				case 'list':
