@@ -6,14 +6,13 @@ const {
     GroupSettingChange
 } = require('@adiwajshing/baileys')
 const { color, bgcolor } = require('./lib/color')
-const { help } = require('./src/help')
-const {help1} = require('./src/help1')
+const { comandos } = require('./src/cmds')
+const { geral } = require('./src/geral')
 const { modapk } = require('./src/modapk')
 const { pack } = require('./src/pack')
 const { outros } = require('./src/outros')
 const { vipmenu } = require('./src/vipmenu')
 const { destrava } = require('./src/destrava')
-const { grupo } = require('./src/grupo')
 const { menu2 } = require('./src/menu2')
 const { destrava2 } = require('./src/destrava')
 const { gbin } = require('./src/gbin')
@@ -795,11 +794,7 @@ if (text.includes("placa"))
 			switch(command) {
 				case 'help':
 				case 'menu':
-					client.sendMessage(from, help(prefix), text)
-					break
-				case 'help1':
-				case 'menu1':
-					client.sendMessage(from, help1(prefix), text)
+					client.sendMessage(from, comandos(prefix), text)
 					break
 					case 'kiss':
 				    try {    
@@ -814,8 +809,8 @@ if (text.includes("placa"))
 						reply('❌ *ERRO* ❌')
 					}
 					break
-				case 'cmdsgrupo':
-					client.sendMessage(from, grupo(prefix), text)
+				case 'geral':
+					client.sendMessage(from, geral(prefix), text)
 					break
 					case 'lista':
 				case 'list':
