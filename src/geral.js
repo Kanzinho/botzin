@@ -1,4 +1,4 @@
-const grupo = (prefix) => {
+const geral = (prefix) => {
 
  return `
 ╔─━━[ COMANDOS ]━━━─╗
@@ -15,4 +15,4 @@ const grupo = (prefix) => {
 ╚─━━[ KAZINHO BOT ]━━─╝`
 }
 
-exports.grupo = grupo
+exports.geral = geral
