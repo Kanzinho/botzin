@@ -1,24 +1,18 @@
-const grupo = (prefix) => {
+const geral = (prefix) => {
 
  return `
-[COMANDOS DE GRUPO]
--${prefix}banir
--${prefix}leveling [ON/OFF]
--${prefix}level
--${prefix}add
--${prefix}promover
--${prefix}setfoto
--${prefix}setname
--${prefix}rebaixar
--${prefix}admins
--${prefix}marcar [1/2/3]
--${prefix}bemvindo [0/1]
--${prefix}grupoinfo
--${prefix}bomdia
--${prefix}boatarde
--${prefix}boanoite
--${prefix}setdesc
--${prefix}bug`
+╔─━━[ COMANDOS ]━━━─╗
+║
+║ *[1]*${prefix}Geral
+║ *[2]*${prefix}Interação
+║ *[3]*${prefix}Imagens
+║ *[4]*${prefix}Anime
+║ *[5]*${prefix}Grupo
+║ *[6]*${prefix}Voz
+║ *[7]*${prefix}Premium
+║ *[8]*${prefix}Musica
+║
+╚─━━[ KAZINHO BOT ]━━─╝`
 }
 
-exports.grupo = grupo
+exports.geral = geral
