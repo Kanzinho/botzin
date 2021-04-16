@@ -11,6 +11,7 @@ const { geral } = require('./src/geral')
 const { interação } = require('./src/interação')
 const { imagens } = require('./src/kimagens')
 const { modapk } = require('./src/modapk')
+const { menu } = require('./src/menu')
 const { pack } = require('./src/pack')
 const { outros } = require('./src/outros')
 const { vipmenu } = require('./src/vipmenu')
@@ -794,8 +795,10 @@ if (text.includes("placa"))
 			if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, color(command), 'do leke', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'do leke', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			switch(command) {
-				case 'help':
 				case 'menu':
+					client.sendMessage(from, menu(perfix), text)
+					break
+				case 'help':
 					client.sendMessage(from, comandos(prefix), text)
 					break
 					case 'kiss':
