@@ -3662,7 +3662,7 @@ break
 					break
 				case 'dono2':
 					memein = await kagApi.memeindo()
-					buffer = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4V_4fdvF8rluX0T3KKGOvY0TusMwx7nVWtw&usqp=CAU`)
+					buffer = await getBuffer(`https://gescopho.sirv.com/IMG_20210330_212658_744.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*DONO:* KANZINHO\n*CRIADOR:*CAUSS\n*WPP:* wa.me/559184138022\n*INSTA:* @kanzinho_'})
 					break
 				case 'setprefix':
